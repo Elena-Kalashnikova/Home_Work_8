@@ -63,7 +63,7 @@ int[] SumElemRowMatrix(int[,] matrix)
 
     return sum;
 }
-void PrintRowMinSum(int[] array)
+int PrintRowMinSum(int[] array)
 {
     int min_sum = array[0];
     int num = 1;
@@ -76,7 +76,8 @@ void PrintRowMinSum(int[] array)
         }
 
     }
-    Console.WriteLine($"Номер строки с наименьшей суммой элементов = {num}");
+
+    return num;
 }
 
 
@@ -85,4 +86,5 @@ PrintMatrix(array_2d);
 Console.WriteLine();
 int[] arr = SumElemRowMatrix(array_2d);
 PrintArray(arr);
-PrintRowMinSum(arr);
+int number = PrintRowMinSum(arr);
+Console.WriteLine($"Номер строки с наименьшей суммой элементов = {number}");
