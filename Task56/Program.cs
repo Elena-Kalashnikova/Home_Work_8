@@ -79,7 +79,8 @@ void PrintRowMinSum(int[] array)
     Console.WriteLine($"Номер строки с наименьшей суммой элементов = {num}");
 }
 
-int[,] array_2d = CreateMartixRndInt(4, 3, 1, 30);
+
+int[,] array_2d = CreateMartixRndInt(4, 4, 1, 30);
 PrintMatrix(array_2d);
 Console.WriteLine();
 int[] arr = SumElemRowMatrix(array_2d);
